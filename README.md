@@ -23,7 +23,8 @@
 
 Configure bashrc for any users
 
-This role is designed to be able to set custom bahrc for all users or a specific one. You can use the default one provided or write your own. This role will try to add new features and aliases in order to have the best base for any users.
+This role is designed to be able to set custom bashrc for all users or a specific one. You can use the default one provided or write your own. This role will try to add new features and aliases in order to have the best base for any users.
+
 
 ## Requirements
 
@@ -52,7 +53,7 @@ You can change just the bashrc for the new users and skip the default one provid
             bashrc_skel_config: |
               [...]
 
-Configure the default bahrc for root with a custom ps1 and an empty bashrc for test user
+Configure the default bahrc for root with a custom ps1 and an empty bashrc for user test
 
 
         ---
@@ -74,7 +75,6 @@ Configure the default bahrc for root with a custom ps1 and an empty bashrc for t
                 default: false
                 config: |
                   PS1="\[\e[0;37m\][\A]\[\e[0;m\]\[\e[0;32m\]\u\[\e[0;m\]\[\e[0;32m\]@\h\[\e[0; m\]:\[\e[1;36m\]\w\[\e[0;m\]\[\e[1;31m\]\\$\[\e[0;m\] "
-
 
 
 ## License
