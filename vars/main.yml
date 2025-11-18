@@ -24,6 +24,7 @@ _bashrc_common_config_alias: |
   alias la='ls $LS_OPTIONS -lA'
   alias ri='grep -ri --exclude-dir=".git" --color=auto'
   alias tailf='tail -f'
+  alias de='docker_exec() { docker exec -it "$1" bash; }; docker_exec'
 
 _bashrc_common_config_functions: |
   function extract () {
